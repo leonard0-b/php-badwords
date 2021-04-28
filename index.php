@@ -12,39 +12,33 @@
       <span>Chiamata Get</span><br>
       <?php
         $testo = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ante metus, vehicula sed luctus id, imperdiet nec erat. Nam at fringilla nibh. Maecenas tincidunt metus ornare lacus faucibus, a lacinia ante hendrerit. Etiam eget imperdiet diam, sit amet sagittis massa. Pellentesque quis porttitor nisl, ullamcorper facilisis diam. Etiam velit sapien, condimentum ac augue id, blandit sollicitudin nunc. Vestibulum non tellus eget est aliquam congue sed nec justo. In vitae consectetur lectus, consectetur volutpat ex. Donec tortor nulla, malesuada in ipsum sit amet, ultricies varius velit.";
-
         $testo = str_replace($_GET["badword"], "***", $testo);
-
         echo $testo;
       ?>
     </p>
     <p>
       <?php
         $length = strlen($testo);
-
         echo "Lunghezza paragrafo:" . " " . $length;
       ?>
     </p>
   </div>
   <div class="paragraph-two">
-  <p>
+    <p>
       <span>Sostituita la parola "ipsum"<span><br>
       <?php
         $testo = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ante metus, vehicula sed luctus id, imperdiet nec erat. Nam at fringilla nibh. Maecenas tincidunt metus ornare lacus faucibus, a lacinia ante hendrerit. Etiam eget imperdiet diam, sit amet sagittis massa. Pellentesque quis porttitor nisl, ullamcorper facilisis diam. Etiam velit sapien, condimentum ac augue id, blandit sollicitudin nunc. Vestibulum non tellus eget est aliquam congue sed nec justo. In vitae consectetur lectus, consectetur volutpat ex. Donec tortor nulla, malesuada in ipsum sit amet, ultricies varius velit.";
-
         $testo = str_replace("ipsum", "***", $testo);
-
         echo $testo;
       ?>
     </p>
     <p>
       <?php
         $length = strlen($testo);
-
         echo "Lunghezza paragrafo:" . " " . $length;
       ?>
     </p>
-</div>
+  </div>
   
 </body>
 </html>
