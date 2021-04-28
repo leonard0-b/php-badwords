@@ -14,14 +14,19 @@
     <p>
       <span>Chiamata Get</span><br>
       <?php
+        //salvo il testo in una variabile
         $testo = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ante metus, vehicula sed luctus id, imperdiet nec erat. Nam at fringilla nibh. Maecenas tincidunt metus ornare lacus faucibus, a lacinia ante hendrerit. Etiam eget imperdiet diam, sit amet sagittis massa. Pellentesque quis porttitor nisl, ullamcorper facilisis diam. Etiam velit sapien, condimentum ac augue id, blandit sollicitudin nunc. Vestibulum non tellus eget est aliquam congue sed nec justo. In vitae consectetur lectus, consectetur volutpat ex. Donec tortor nulla, malesuada in ipsum sit amet, ultricies varius velit.";
+        //salvo la richista get in una variabile
         $badwordget = $_GET["badword"];
+        //creo una variabile col nuovo testo nel quale la parola indicata dalla richiesta get sarà sostituita con ***
         $newtext = str_replace($badwordget, "***", $testo);
+        //stampo a schermo
         echo $newtext;
       ?>
     </p>
     <p>
       <?php
+        //salvo la lunghezza della stringa
         $length = strlen($newtext);
         echo "Lunghezza paragrafo:" . " " . $length;
       ?>
@@ -31,14 +36,19 @@
     <p>
       <span>Sostituita la parola "ipsum"</span><br>
       <?php
+        //salvo il testo in una variabile
         $testo = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ante metus, vehicula sed luctus id, imperdiet nec erat. Nam at fringilla nibh. Maecenas tincidunt metus ornare lacus faucibus, a lacinia ante hendrerit. Etiam eget imperdiet diam, sit amet sagittis massa. Pellentesque quis porttitor nisl, ullamcorper facilisis diam. Etiam velit sapien, condimentum ac augue id, blandit sollicitudin nunc. Vestibulum non tellus eget est aliquam congue sed nec justo. In vitae consectetur lectus, consectetur volutpat ex. Donec tortor nulla, malesuada in ipsum sit amet, ultricies varius velit.";
+        //salvo la parola da sostituire in una variabile
         $badword = "ipsum";
+        //sostituisco la badword con ***
         $textcensored = str_replace($badword, "***", $testo);
+        //stampo a schermo
         echo $textcensored;
       ?>
     </p>
     <p>
       <?php
+        //salvo la lunghezza della stringa
         $length = strlen($textcensored);
         echo "Lunghezza paragrafo:" . " " . $length;
       ?>
